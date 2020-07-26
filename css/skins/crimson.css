@@ -1,0 +1,33 @@
+
+
+.header,
+.home-section,
+.section-title .title::before,
+.offer-section .offer-item:hover,
+.burguer-section .owl-carousel .owl-nav button.owl-next,
+.burguer-section .owl-carousel .owl-nav button.owl-prev,
+.feedback-section::before,
+.feedback-section .owl-carousel .owl-nav button.owl-next:hover,
+.feedback-section .owl-carousel .owl-nav button.owl-prev:hover{
+    background-color: #d9882f;
+}
+
+.mybtn1,
+.mybtn1:hover,
+.section-title .title,
+.offer-section .offer-item .fas-icon,
+.burguer-section .burguer-content .burguer-price .price,
+.feedback-section .client-info h5,
+.feedback-section .owl-carousel .owl-nav button.owl-next,
+.feedback-section .owl-carousel .owl-nav button.owl-prev,
+.footer .footer-logo a,
+.footer .footer-text p,
+.footer .footer-social-links .social-media{
+    color: #d9882f;
+}
+
+
+.feedback-section .client-info img{
+    border-color: #d9882f;
+}
+

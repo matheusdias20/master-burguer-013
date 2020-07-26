@@ -1,0 +1,585 @@
+ /*Google font*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+
+body{
+  margin: 0;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+
+a{
+  text-decoration: none!important;
+}
+
+
+/* Inicio Menu */
+
+.header{
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+
+
+.header .navbar{
+  padding: 0;
+}
+
+.header .navbar.navbar-light .navbar-brand{
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+
+.header .navbar #collapsibleNavbar .nav-item .nav-link{
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 600;
+  padding: 20px 15px 20px;
+  line-height: 26px;
+  opacity: 0.6;
+}
+
+.header .navbar #collapsibleNavbar .nav-item .nav-link.active{
+  opacity: 1;
+}
+
+/* Fim Menu */
+
+
+
+
+/* Inicio Home */
+.home-section{
+  padding: 200px 0 200px;
+  position: relative;
+  z-index: 1;
+}
+
+.home-section::before{
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 112px;
+  background-image: url("../img/shape-bg.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+
+.home-section .home-content h1{
+  font-size: 55px;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 60px;
+  margin: 0;
+}
+
+.home-section .home-content p{
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  line-height: 28px;
+  text-align: justify;
+  font-weight: 400;
+}
+
+.mybtn1{
+  background-color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 50px;
+  padding: 12px 36px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.mybtn1:focus{
+  box-shadow: none;
+}
+
+.mybtn1::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  background-color: rgba(0,0,0,0.1);
+  height: 100%;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.mybtn1:hover::before{
+  width: 100%;
+}
+
+.home-section .home-img{
+  position: relative;
+}
+
+.home-section .home-img img{
+  max-width: 400px;
+  width: 100%;
+  position: absolute;
+  left: 150px;
+  top:-50px;
+  animation: hamburguerani01 5s linear infinite
+}
+
+
+@keyframes hamburguerani01{
+  0%,100%{
+    transform: translateY(15px);
+  }
+  50%{
+    transform: translateY(-15px);
+  }
+}
+/* Fim Home */
+
+
+/* Inicio Sobre */
+.about-section{
+  padding: 80px 0 80px;
+}
+
+
+.about-section .about-img{
+  margin:auto;
+}
+
+.about-section .about-img img{
+  max-width: 420px;
+  width: 100%;
+}
+
+.about-section .section-title{
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.about-section .about-content p{
+  font-size: 16px;
+  line-height: 26px;
+  color: #555555;
+  margin: 0;
+  text-align: justify;
+}
+
+.about-section .about-content ul{
+  display: block;
+  margin: 30px 0 0;
+
+}
+
+.about-section .about-content ul li{
+  font-size: 16px;
+  line-height: 26px;
+  color: #555555;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+
+.section-title{
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.section-title .title{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-bottom: 0 0 15px;
+  position: relative;
+  padding: 5px 10px;
+  z-index: 1;
+}
+
+.section-title .title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 4px;
+  opacity: 0.1;
+}
+
+.section-title .subtitle{
+  font-size: 30px;
+  line-height: 38px;
+  color: #222222;
+  font-weight: 700;
+  margin: 0;
+}
+/* Fim Sobre */
+
+
+/* Inicio Combos  */
+.offer-section{
+  background-color: #f5f5ff;
+  padding: 80px 0 50px;
+}
+
+
+.offer-section .offer-item{
+  box-shadow: 0 0 10px #dddde3;
+  padding: 40px 30px;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+.offer-section .offer-item:hover{
+  transform: translateY(-10px);
+}
+
+
+.offer-section .offer-item .icon{
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.offer-section .offer-item .fas-icon{
+  font-size: 40px;
+  display: inline-block;
+  transition: all 0.5s ease;
+}
+
+
+.offer-section .offer-item h3{
+  font-size: 22px;
+  font-weight: 600;
+  color: #222222;
+  margin: 0 0 15px;
+  line-height: 30px;
+  transition: all 0.5s ease;
+  text-align: center;
+}
+
+.offer-section .offer-item p{
+  font-size: 16px;
+  line-height: 26px;
+  color: #555555;
+  margin: 0;
+  transition: all 0.5s ease;
+  text-align: justify;
+  font-weight: 400;
+}
+
+.offer-section .offer-item:hover .fas-icon,
+.offer-section .offer-item:hover h3,
+.offer-section .offer-item:hover p{
+  color: #ffffff;
+}
+
+/* Fim Combos  */
+
+
+/* Inicio Burguer */
+.burguer-section{
+  padding: 80px 0 80px;
+  background-color: #ffffff;
+}
+
+.burguer-section .burguer-item{
+  box-shadow: 0 0 10px #dddde3;
+  margin: 15px 0;
+}
+
+.burguer-section .burguer-img{
+  border-bottom: 1px solid #eeeeee;
+  position: relative;
+}
+
+.burguer-section .burguer-img .overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.6);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.burguer-section .burguer-item:hover .burguer-img .overlay{
+  opacity: 1;
+}
+
+.burguer-section .burguer-img .overlay .btn{
+  margin: auto;
+  transform: translateY(100px);
+  transition: all 0.5s ease;
+}
+
+.burguer-section .burguer-item:hover .burguer-img .overlay .btn{
+  transform: translateY(0px);
+}
+
+.burguer-section .burguer-img img{
+  width: 100%;
+  display: block;
+}
+
+.burguer-section .burguer-content{
+  padding: 0 30px;
+  text-align: center;
+}
+
+.burguer-section .burguer-content .burguer-price{
+  margin: 15px 0 5px;
+}
+
+.burguer-section .burguer-content .burguer-price .price{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.burguer-section .burguer-content .burguer-name{
+  font-size: 16px;
+  font-weight: 600;
+  color: #222222;
+  line-height: 26px;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.burguer-section .owl-carousel .owl-nav{
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+.burguer-section .owl-carousel .owl-nav button.owl-next:focus,
+.burguer-section .owl-carousel .owl-nav button.owl-prev:focus{
+  outline: none;
+}
+
+.burguer-section .owl-carousel .owl-nav button.owl-next,
+.burguer-section .owl-carousel .owl-nav button.owl-prev{
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  margin: 0 10px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: 500;
+  overflow: hidden;
+}
+
+.burguer-section .owl-carousel .owl-nav button.owl-next span,
+.burguer-section .owl-carousel .owl-nav button.owl-prev span{
+  font-size: 40px;
+  margin-top: -13px;
+  display: block;
+}
+
+/* Fim Burguer */
+
+
+/* Inicio Feedback */
+.feedback-section{
+  padding: 80px 0 80px;
+  background-image: url(../img/bg-01.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+}
+
+.feedback-section::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.85;
+}
+
+.feedback-section .section-title .title,
+.feedback-section .section-title .subtitle{
+  color:#ffffff;
+}
+
+.feedback-section .section-title .title::before{
+  background-color: #ffffff;
+}
+
+.feedback-section .feed-item{
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.feedback-section .feed-comment p{
+  font-size: 16px;
+  line-height: 26px;
+  color: #555555;
+  font-weight: 400;
+  margin: 0 0 10px;
+  font-style: italic;
+}
+
+.feedback-section .feed-comment p .fa-quote-left{
+  margin-right: 5px;
+}
+
+.feedback-section .feed-comment p .fa-quote-right{
+  margin-left: 5px;
+}
+
+.feedback-section .feed-comment #nota-starts{
+  margin: 0 0 20px;
+}
+
+.feedback-section .feed-comment #nota-starts li{
+  display: inline-block;
+  margin: 0 1px;
+  color: #ff8900;
+}
+
+.feedback-section .client-info{
+  position: relative;
+  padding-left: 80px;
+  padding-top: 6px;
+  min-height: 60px;
+}
+
+.feedback-section .client-info img{
+  height: 60px;
+  width: 60px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.feedback-section .client-info h5{
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin: 0 0 2px;
+}
+
+.feedback-section .client-info p{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #555555;
+  margin: 0;
+}
+
+
+.feedback-section .owl-carousel .owl-nav{
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+.feedback-section .owl-carousel .owl-nav button.owl-next:focus,
+.feedback-section .owl-carousel .owl-nav button.owl-prev:focus{
+  outline: none;
+}
+
+.feedback-section .owl-carousel .owl-nav button.owl-next,
+.feedback-section .owl-carousel .owl-nav button.owl-prev{
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  margin: 0 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  font-weight: 500;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.feedback-section .owl-carousel .owl-nav button.owl-next:hover,
+.feedback-section .owl-carousel .owl-nav button.owl-prev:hover{
+  color: #ffffff;
+}
+
+.feedback-section .owl-carousel .owl-nav button.owl-next span,
+.feedback-section .owl-carousel .owl-nav button.owl-prev span{
+  font-size: 40px;
+  margin-top: -13px;
+  display: block;
+}
+/* Fim Feedback */
+
+
+
+/* Inicio Rodapé */
+.footer{
+  padding-top: 80px;
+  text-align: center;
+  background-color: #f5f5ff;
+}
+
+.footer .footer-logo a{
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 0 15px;
+}
+
+.footer .footer-text p{
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  margin: 0 0 25px;
+}
+
+.footer .footer-social-links{
+  margin-bottom: 80px;
+}
+
+.footer .footer-social-links .links{
+  display: inline-block;
+  text-align: center;
+  margin: 0 4px;
+}
+
+.footer .footer-social-links .links .social-media{
+  height: 30px;
+  width: 30px;
+  display: block;
+  line-height: 38px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+/* Fim Rodapé */
